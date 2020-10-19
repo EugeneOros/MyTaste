@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>My Taste</title>
+	<link rel="stylesheet" href="styleProject1.css">
+	<link href="https://fonts.googleapis.com/css?family=Fascinate+Inline&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="jsProject1.js"></script>
+</head>
+
+<body>
+	<div id="start">
+		<menu>
+			<div id="logo" style="align-self: flex-end">My Taste</div>
+			<div id="space" style="flex-grow: 5 "> </div>
+			<div id="btnGroup">
+				<button class="menuBtn active" style="flex-grow: 1" onclick="window.location.href = '#start';">Main
+					Page</button>
+				<button class="menuBtn" style="flex-grow: 1"
+					onclick="window.location.href = '#section';">Introduction</button>
+				<button class="menuBtn" style="flex-grow: 1"
+					onclick="window.location.href = '#content';">Gallary</button>
+			</div>
+		</menu>
+	</div>
+
+	<section id="section">
+		<div id="aboutMe">
+			<p1>
+				Cześć, to jest strona moich ulubionych potraw. <br>
+				Zapraszam !!!<br>
+				Myśle że ci spodoba się
+			</p1>
+		</div>
+		<img id="cook" src="img/cook.png" alt="cook">
+	</section>
+
+	<content id="content">
+		<div class="dish" id="dish1">
+			<div class="dishImgBtn" id="1" onclick="openClose(this.id)">
+				<div class="frontImg">
+					<div class="imgDish">
+						<img src="img/pierogi.jpg" alt="what">
+					</div>
+					Pierogi
+				</div>
+				<div class="backImg">
+					<div class="imgDish">
+						<img src="img/spices.jpg" alt="what">
+					</div>
+					Pierogi
+				</div>
+			</div>
+
+			<div class="dishDescription" id="dishDescription1">
+				<p> Kawałki cienkiego, elastycznego i dobrze zlepiającego się ciasta napełnione najrozmaitszymi farszami
+					i ugotowane w wodzie lub na parze, upieczone, usmażone czy grillowane;</p>
+			</div>
+		</div>
+
+		<div class="dish" id="dish2">
+			<div class="dishImgBtn" id="2" onclick="openClose(this.id)">
+				<div class="frontImg">
+					<div class="imgDish">
+						<img src="img/bigos.jpg" alt="what">
+					</div>
+					Bigos
+				</div>
+				<div class="backImg">
+					<div class="imgDish">
+						<img src="img/spices.jpg" alt="what">
+					</div>
+					Bigos
+				</div>
+			</div>
+
+			<div class="dishDescription" id="dishDescription2">
+				<p>Tradycyjna dla kuchni polskiej, litewskiej i białoruskiej potrawa z kapusty i mięsa.</p>
+			</div>
+		</div>
+
+		<div class="dish" id="dish3">
+			<div class="dishImgBtn" id="3" onclick="openClose(this.id)">
+				<div class="frontImg">
+					<div class="imgDish">
+						<img src="img/zurek1.jpg" alt="what">
+					</div>
+					Żurek
+				</div>
+				<div class="backImg">
+					<div class="imgDish">
+						<img src="img/spices.jpg" alt="what">
+					</div>
+					Żurek
+				</div>
+			</div>
+			<div class="dishDescription" id="dishDescription3">
+				<p>Zupa przyrządzana na bazie zakwasu chlebowego z mąki żytniej mająca charakterystyczny kwaśny smak.
+				</p>
+			</div>
+		</div>
+
+		<div class="dish" id="dish4">
+			<div class="dishImgBtn" id="4" onclick="openClose(this.id)">
+				<div class="frontImg">
+					<div class="imgDish">
+						<img src="img/pomidorowa.jpg" alt="what">
+					</div>
+					Zupa pomidorowa
+				</div>
+				<div class="backImg">
+					<div class="imgDish">
+						<img src="img/spices.jpg" alt="what">
+					</div>
+					Zupa pomidorowa
+				</div>
+			</div>
+			<div class="dishDescription" id="dishDescription4">
+				<p>Po prostu polska zupa pomidorowa</p>
+			</div>
+		</div>
+
+		<div class="dish" id="dish5">
+			<div class="dishImgBtn" id="5" onclick="openClose(this.id)">
+				<div class="frontImg">
+					<div class="imgDish">
+						<img src="img/ziemniaki.jpg" alt="what">
+					</div>
+					Tłuczone ziemniaki
+				</div>
+				<div class="backImg">
+					<div class="imgDish">
+						<img src="img/spices.jpg" alt="what">
+					</div>
+					Tłuczone ziemniaki
+				</div>
+			</div>
+			<div class="dishDescription" id="dishDescription5">
+				<p>Innymi słowami pysznę ziemniaki puree</p>
+			</div>
+		</div>
+
+		<div class="dish" id="dish6">
+			<div class="dishImgBtn" id="6" onclick="openClose(this.id)">
+				<div class="frontImg">
+					<div class="imgDish">
+						<img src="img/pizza.jpg" alt="what">
+					</div>
+					Pizza
+				</div>
+				<div class="backImg">
+					<div class="imgDish">
+						<img src="img/spices.jpg" alt="what">
+					</div>
+					Pizza
+				</div>
+			</div>
+			<div class="dishDescription" id="dishDescription6">
+				<p>Potrawa kuchni włoskiej, obecnie szeroko rozpowszechniona na całym świecie. Jest to płaski placek z
+					ciasta drożdżowego, posmarowany sosem pomidorowym, posypany tartym serem mozzarella i ziołami,
+					pieczony w bardzo mocno nagrzanym piecu.</p>
+			</div>
+		</div>
+
+		<div class="dish" id="dish7">
+			<div class="dishImgBtn" id="7" onclick="openClose(this.id)">
+				<div class="frontImg">
+					<div class="imgDish">
+						<img src="img/barszcz.jpg" alt="what">
+					</div>
+					Barszcz
+				</div>
+				<div class="backImg">
+					<div class="imgDish">
+						<img src="img/spices.jpg" alt="what">
+					</div>
+					Barszcz
+				</div>
+			</div>
+			<div class="dishDescription" id="dishDescription7">
+				<p>Ogólnie barszczem nazywa się kwaśną zupę, a jej podstawą może być zakwas żytni, kapusta kiszona,
+					buraki ćwikłowe </p>
+			</div>
+		</div>
+
+		<div class="dish" id="dish8">
+			<div class="dishImgBtn" id="8" onclick="openClose(this.id)">
+				<div class="frontImg">
+					<div class="imgDish">
+						<img src="img/szaszlyk.jpg" alt="what">
+					</div>
+					Szaszłyki
+				</div>
+
+				<div class="backImg">
+					<div class="imgDish">
+						<img src="img/spices.jpg" alt="what">
+					</div>
+					Szaszłyki
+				</div>
+			</div>
+			<div class="dishDescription" id="dishDescription8">
+				<p>Potrawa składająca się z kawałków mięsa nadzianych na szpikulec i pieczonych na rożnie lub
+					grillowanych.</p>
+			</div>
+		</div>
+
+		<div id=add onclick=" appearAddField(); window.location.href = '#addField';">
+			<img src="img/add.png" alt="add">
+		</div>
+
+	</content>
+
+	<div id="addField">
+		<div id="addBox">
+			<h1>Dodaj Danie</h1>
+			<div id="notFilled"></div>
+			<form name="Form" onsubmit="return addDish()">
+				<label for="name">Nazwa dania</label></br>
+				<input type="text" id="name" name="name" placeholder="wpisz nazwę"></br>
+				<label for="description">Opis dania</label></br>
+				<textarea cols="30" rows="2" name="description" id="description"
+					placeholder="wpisz opis dania"></textarea> <br>
+				<label for="imgAddress">Address zdjęcia</label></br>
+				<input type="text" id="imgAddress" name="imgAddress" placeholder="podaj address zdjęcia"></br><br>
+				<input type="submit" value="Submit">
+
+			</form>
+		</div>
+	</div>
+
+
+	<footer>
+		end of page
+	</footer>
+
+	<script>
+		// Add active class to the current button (highlight it)
+		var header = document.getElementById("btnGroup");
+		var btns = header.getElementsByClassName("menuBtn");
+		for (var i = 0; i < btns.length; i++) {
+			btns[i].addEventListener("click", function () {
+				var current = document.getElementsByClassName("active");
+				current[0].className = current[0].className.replace(" active", "");
+				this.className += " active";
+			});
+		}
+	</script>
+</body>
+
+</html>

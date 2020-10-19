@@ -1,0 +1,286 @@
+body, html{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-image: url("img/pattern.png");
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+ html{
+	 scroll-behavior: smooth;
+ }
+
+#start{
+	width:100%;
+	background-image: url("img/food.jpg");
+	height:300px;
+	
+	
+}
+.foodImg{
+	 width: 100%;
+	 height: 100%;
+}
+menu{
+	position: fixed;
+	top: 0;
+	width: 99%;
+	/*margin: 0 1em;*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	height: 60px;
+	background-color: rgba(130,45,30,0.7);
+	padding:10px;
+	z-index: 1000;
+}
+#logo{
+	color: #aaa;
+	font-size: 3vw;
+	font-family: 'Fascinate Inline';
+	font-style: italic;
+	text-align: center;
+}
+.menuBtn{
+  background-color: #603015;
+  border: none;
+  color: #ccc;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 1.5vw;
+  cursor: pointer;
+  margin:10px;
+}
+.menuBtn:hover, .active{
+  background-color: #402010;
+}
+.menuBtn:active {
+	 background-color: #904522;
+}
+
+
+
+section{
+	display:grid;
+	grid-template-columns: 80% 20%;
+	
+	margin: 20px 20px;
+	height: auto;
+}
+
+section img{
+	width: 100%;
+	height: auto;
+}
+#cook{
+	width: 100%;
+}
+#aboutMe{
+	display: flex;
+	padding:10px;
+    align-items: center;
+    justify-content: center;
+	background-color: #ffa;	
+	margin-right: 30px;
+	text-align: center;
+}
+
+p1{
+	font-family: Verdana;
+	color: #aaa;
+	font-size: 20px;
+	
+}
+
+content{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 40px;
+	padding: 0 20px;
+	margin-bottom: 2em;
+}
+.dish{
+	position: relative;
+	display: block;
+	
+
+	height:100%;
+	width: 100%;
+	background-color: #fe9 ;
+	visibility: visible;
+	opacity: 1;
+	transition: visibility 1s, opacity 1s linear;
+	
+}
+.dishImgBtn{
+	color: #ccc;
+	font-size: 20px;
+	background-color: #963;
+	border:none;
+	padding: 0;
+	width:100%;
+	height: 250px;
+	cursor: pointer;
+	text-align: center;
+  	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	padding-bottom: 10px;
+
+}
+/* .dishImgBtn:hover {
+	transform: rotateY(180deg);
+  } */
+.frontImg, .backImg {
+	position: absolute;
+	width: 100%;
+	backface-visibility: hidden;
+}
+.imgDish{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 230px;
+	overflow: hidden;
+	background-color: #402010;
+}
+.frontImg img, .backImg img{
+	width: 100%;
+}
+
+.backImg {
+	transform: rotateY(180deg);
+}
+.dishImgBtn img{
+	width:100%;
+}
+#add{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(8, 247, 8, 0.4);
+	width:100%;
+	height: 250px;
+}
+#add img{
+	width: 100px;
+	height: 100px;
+}
+
+.dishDescription{
+	display: flex;
+	position: absolute;
+	vertical-align: middle;
+	font-size: 15px;
+	
+	color: #555;
+	font-family: Verdana;
+	background-color:#fe9;
+	width: 100%;
+	height: 0px;
+	z-index: 201;
+	
+	transition:transform 0.3s ease-out;
+	height:auto;
+	transform:scaleY(0); 
+	transform-origin:top; 		
+}
+.dishDescription p{
+	padding: 1em;
+	width: 100%;
+}
+
+#addField{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 0px;
+	transition:transform 0.3s ease-out;
+	padding-top: 150px;
+	transform:scaleY(0); 
+	transform-origin:top; 
+	
+}
+#notFilled{
+	color: red;
+	font-size: 15px;
+}
+#addBox{
+	color: #402010;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 70px;
+	background-color: rgba(211, 172, 89, 0.7);
+	margin: 0px auto;
+}
+
+footer{
+	margin-top: 200px;
+	 background-color: #502513;
+	 color: #777;
+	 width: 1fr;
+	 height: 20px;
+	 text-align: center;
+}
+
+@media (max-width: 1000px){
+  
+#start{
+	height: 230px;
+}
+  menu{
+	height: 40px
+}
+
+  section{
+	  grid-template-columns: 1fr;
+	  margin: 20px 0;
+  }
+  #cook{
+	height: 0px;
+}
+  #aboutMe{
+	  margin: 0;
+  }
+  
+  	 content {
+    grid-template-columns: 1fr 1fr;
+    /*grid-template-rows: auto minmax(75px, auto) 1fr minmax(75px, auto) auto;*/
+  }
+}
+
+@media (max-width: 600px){
+ 
+ #logo{
+	 font-size: 0px;
+	 width: 0;
+ }
+.menuBtn{
+   font-size: 17px;
+}
+#start{
+	height: 150px;
+}
+menu {
+	height: 30px;
+}
+
+section{
+  grid-template-columns: 1fr;
+   margin: 20px 0;
+}  
+#cook{
+	height: 0px;
+}
+#aboutMe{
+	  margin: 0;
+}
+
+content {
+    grid-template-columns: 1fr;
+    /*grid-template-rows: auto minmax(75px, auto) 1fr minmax(75px, auto) auto;*/
+}
+}
